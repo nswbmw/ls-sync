@@ -1,0 +1,16 @@
+{
+  "name": "ls-sync",
+  "version": "0.1.0",
+  "description": "`ls` files under the `dir` synchronously.",
+  "main": "index.js",
+  "keywords": [
+    "ls",
+    "sync",
+    "fs",
+    "file",
+    "list"
+  ],
+  "author": "nswbmw",
+  "license": "MIT",
+  "repository": "https://github.com/nswbmw/ls-sync.git"
+}
