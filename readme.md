@@ -1,6 +1,6 @@
 ## ls-sync
 
-`ls` files under the `dir` synchronously.
+Lists the absolute path of all files in `dir` synchronously.
 
 ### Install
 
@@ -13,6 +13,7 @@ var ls = require('ls-sync');
 
 console.log(ls('.'));
 console.log(ls('..'));
+console.log(ls('/Users/nswbmw'));
 ```
 
 ### License

@@ -5,6 +5,10 @@ module.exports = function ls(dir, _pending, _result) {
   _pending = _pending ? _pending++ : 1;
   _result = _result || [];
 
+  if (!dir.match(/^\//)) {
+    dir = path.join(process.cwd(), dir);
+  }
+
   // if error, throw it
   var stat = fs.lstatSync(dir);
 
@@ -22,4 +26,4 @@ module.exports = function ls(dir, _pending, _result) {
       return _result;
     }
   }
-}
+};
