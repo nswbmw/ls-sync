@@ -5,7 +5,7 @@ module.exports = function ls(dir, _pending, _result) {
   _pending = _pending ? _pending++ : 1;
   _result = _result || [];
 
-  if (!dir.match(/^\//)) {
+  if (!path.isAbsolute(dir)) {
     dir = path.join(process.cwd(), dir);
   }
 
