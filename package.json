@@ -1,6 +1,6 @@
 {
   "name": "ls-sync",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Lists the absolute path of all files in `dir` synchronously.",
   "main": "index.js",
   "keywords": [

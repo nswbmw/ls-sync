@@ -13,6 +13,7 @@ module.exports = function ls(dir, _pending, _result) {
   var stat = fs.lstatSync(dir);
 
   if (stat.isDirectory()) {
+    _result.push(dir);
     var files = fs.readdirSync(dir);
     files.forEach(function (part) {
       ls(path.join(dir, part), _pending, _result);
